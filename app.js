@@ -21,7 +21,7 @@ var mongoose = require('mongoose')
 //      }
 // })
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://sravan_35:Sravan@137427@cluster0-vwome.mongodb.net/test?retryWrites=true&w=majority' , { useNewUrlParser: true, useUnifiedTopology: true } , ( err ) => {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://<user_name>:<password>@cluster0-vwome.mongodb.net/test?retryWrites=true&w=majority' , { useNewUrlParser: true, useUnifiedTopology: true } , ( err ) => {
   if(!err)
     { console.log('MongoDB Connection Successful');
      }
